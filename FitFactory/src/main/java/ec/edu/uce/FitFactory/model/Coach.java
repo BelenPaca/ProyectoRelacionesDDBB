@@ -14,8 +14,7 @@ public class Coach {
     private String description;
 
 
-//    @ManyToMany(mappedBy = "coach")
-    @OneToMany(mappedBy = "coach")
+    @ManyToMany(mappedBy = "coach")
     private List<GymClasses> gymClasses;
 
     public long getId_coach() {
